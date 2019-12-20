@@ -1,0 +1,96 @@
+.navbar
+  display: flex
+  height: 70px
+  position: fixed
+  width: 100%
+  align-items: center
+  justify-content: stretch
+  transition: background-color 0.2s ease
+  z-index: 2
+  &-white
+    background-color: $white
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5)
+    height: 65px
+    transition-timing-function: ease-in-out
+    transition: 0.2s
+    .navbar-logo
+      a
+        color: $navbar-color-reversed
+      
+    .navbar-items
+      .navbar-item
+        a
+          color: $navbar-color-reversed
+        a:after
+          background-color: $navbar-color-reversed
+        .navbar-item-svgs
+          img
+            filter: invert(100%)
+
+.navbar-logo
+  display: flex
+  align-items: center
+  padding-left: 3rem
+  font-size: 2rem
+  font-family: $muli
+  height: inherit
+  font-weight: bold
+  a
+    text-decoration: none
+    
+.navbar-items
+  display: flex
+  flex: 1
+  justify-content: flex-end
+  width: auto
+  height: inherit
+  padding-right: 16px
+
+.navbar-item
+  display: flex
+  height: inherit
+  align-items: center
+  padding-left: 16px
+  padding-right: 16px
+
+  a
+    text-decoration: none
+    font-size: 16px
+    font-family: 'Muli'
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+    letter-spacing: 0.1em
+    display: inline-block
+    position: relative
+    color: $navbar-color
+
+
+.navbar-item-svgs
+  display: flex
+  height: inherit
+  align-items: center
+  width: 110px
+  justify-content: space-between
+
+  a > img
+    width: 22px
+    height: 22px
+    padding-top: 4px
+
+.navbar-item > a
+  &:after
+    background: none repeat scroll 0 0 transparent
+    bottom: -8px
+    content: ""
+    display: block
+    height: 2px
+    left: 50%
+    background-color: $navbar-color
+    position: absolute
+    transition: width 0.3s ease 0s, left 0.3s ease 0s
+    width: 0
+
+  &:hover:after
+    width: 100%
+    left: 0

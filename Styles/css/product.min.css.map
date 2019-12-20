@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../components/product.sass"
+    ],
+    "names": [],
+    "file": "product.min.css"
+}

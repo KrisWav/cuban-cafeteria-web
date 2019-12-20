@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,AAAC,CACT,KAAK,CAAE,IAAI,CACX,gBAAgB,CAAE,2CAA2C,CAAG",
+    "sources": [
+        "../layout/map_section.sass"
+    ],
+    "names": [],
+    "file": "map_section.min.css"
+}

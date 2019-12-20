@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cafeteria Cubana</title>
+    <link href="../Styles/css/main.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuban cafeteria">
+    <meta name="keywords"
+        content="coffee,cuba,cuban,cafe,cafeteria,carribean,espresso,mocha,cappuccino,coffee shops,latte,black coffee">
+    <meta name="author" content="Kryštof Záhumenský">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154241679-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154241679-1');
+    </script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="landing">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html" class="black">Cafeteria Cubana</a>
+            </div>
+            <div class="hamburger-container">
+                <div class="hamburger" onclick="mobileMenuShow(), hamburgerOnClickAnimation()">
+                    <div class="bar1 black-background"></div>
+                    <div class="bar2 black-background"></div>
+                    <div class="bar3 black-background"></div>
+                </div>
+            </div>
+            <div class="navbar-items">
+                <div class="navbar-item"><a href="#">Home</a></div>
+                <div class="navbar-item"><a href="about_us.html">About us</a></div>
+                <div class="navbar-item"><a href="menu.html">Menu</a></div>
+                <div class="navbar-item"><a href="#contact">Contact</a></div>
+                <div class="navbar-item">
+                    <div class="navbar-item-svgs">
+                        <a href="https://www.instagram.com/"><img class="black-svg" src="../Images/svg/instagram.svg"
+                                alt="instagram"></a>
+                        <a href="https://www.facebook.com/"><img class="black-svg"
+                                src="../Images/svg/facebook-app-logo.svg" alt="facebook"></a>
+                        <a href="https://twitter.com/"><img class="black-svg" src="../Images/svg/twitter.svg"
+                                alt="twitter"></a>
+                    </div>
+                </div>
+                <div class="navbar-item"><a href="../index.html">CZ</a></div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-items-container">
+                <div class="mobile-menu-item"><a href="#"
+                        onclick="mobileMenuShow(), hamburgerOnClickAnimation()">Home</a></div>
+                <div class="mobile-menu-item"><a href="about_us.html">About us</a></div>
+                <div class="mobile-menu-item"><a href="menu.html">Menu</a></div>
+                <div class="mobile-menu-item"><a href="#contact"
+                        onclick="mobileMenuShow(), hamburgerOnClickAnimation()">Contact</a></div>
+                <div class="mobile-menu-item">
+                    <div class="mobile-menu-svgs">
+                        <a href="https://www.instagram.com/"
+                            onclick="mobileMenuShow(), hamburgerOnClickAnimation()"><img class="black-svg"
+                                src="../Images/svg/instagram.svg" alt="instagram"></a>
+                        <a href="https://www.facebook.com/" onclick="mobileMenuShow(), hamburgerOnClickAnimation()"><img
+                                class="black-svg" src="../Images/svg/facebook-app-logo.svg" alt="facebook"></a>
+                        <a href="https://twitter.com/" onclick="mobileMenuShow(), hamburgerOnClickAnimation()"><img
+                                class="black-svg" src="../Images/svg/twitter.svg" alt="twitter"></a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item"><a href="../index.html" onclick="mobileMenuShow(), hamburgerOnClickAnimation()">CZ</a></div>
+            </div>
+        </div>
+        <div class="landing-title">
+            <h1>CAFETERIA CUBANA</h1>
+        </div>
+        <div class="landing-text">Authentic and traditional Cuban coffee exported straight from Cuba</div>
+        <a href="#section-about">
+            <div class="arrow bounce"></div>
+        </a>
+    </div>
+    <div id="section-about">
+        <h2>MORE THAN JUST COFFEE</h2>
+        <div class="section-about-items">
+            <div class="section-about-item">
+                <img src="../Images/svg/coffee-beans.svg" alt="coffee beans">
+                <h3>FRESH COFFEE BEANS</h3>
+                <div class="section-about-item-text">
+                    We roast imported coffee beans by ourselves, so you can experience the best tasting coffee.
+                </div>
+            </div>
+            <div class="section-about-item">
+                <img src="../Images/svg/cuba_map.svg" alt="cuba map">
+                <h3>TRADITIONAL FROM CUBA</h3>
+                <div class="section-about-item-text">
+                    We import coffee beans from traditional Cuban plantations. Experience the feeling of Cuba yourself.
+                </div>
+            </div>
+            <div class="section-about-item">
+                <img src="../Images/svg/coffee.svg" alt="coffee maker">
+                <h3>PROFFESIONALLY SERVED</h3>
+                <div class="section-about-item-text">
+                    Our staff is professional and helpful. If you need help or something is wrong feel free to contact
+                    anyone from our staff.
+                </div>
+            </div>
+        </div>
+        <div class="button-container"><button class="default-button" type="button"
+                onclick="window.location.href = 'about_us.html';">ABOUT US</button></div>
+    </div>
+    <div class="article-container">
+        <div class="article-left">
+            <div class="article-left-title-container">
+                <h2>OUR FINEST CAFE</h2>
+            </div>
+            <div class="article-left-text-container">
+                <p>
+                    Our coffee comes from traditional eastern Cuban plantations in the Sierra Maestra mountains. Because
+                    of this, our coffee has uniqe and delicious taste that you have never experienced before. Apart from
+                    Cuban coffee we also serve other coffee types that you are used to and many of non-alcoholic 
+                    and alcoholic drinks. Just look at our menu.
+                </p>
+            </div>
+            <div class="button-container">
+                <button type="button" class="default-button" onclick="window.location.href = 'menu.html';">MENU</button>
+            </div>
+        </div>
+        <div class="article-right"></div>
+    </div>
+    <div class="banner">
+        <div class="banner-background"></div>
+        <div class="banner-title-container">
+            <h2>FIND US HERE</h2>
+        </div>
+        <div class="banner-paragraph-container">
+            <p>You can find us just few steps away from Wenceslas square in Praque.</p>
+        </div>
+        <div class="button-container">
+            <button type="button" class="default-button"
+                onclick="window.location.href = 'https://www.google.com/maps/place/Cafe+and+creperie+By+Fox/@50.2100988,15.8317911,17.03z/data=!4m5!3m4!1s0x0:0xb808353b87edfab1!8m2!3d50.2102724!4d15.8331496;'">NAVIGATE</button>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="section-contact-left">
+            <div class="section-contact-openhours">
+                <div class="section-contact-openhours-text-container">
+                    <h2>COME VISIT US</h2>
+                    <h3>WEEKDAYS</h3>
+                    <p>6AM - 10PM</p>
+                    <h3>WEEKENDS</h3>
+                    <p>8AM - 12PM</p>
+                </div>
+            </div>
+            <div class="section-contact-socialmedia">
+                <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+                <div class="section-contact-socialmedia-svg-container">
+                    <a href="https://www.instagram.com/"><img src="../Images/svg/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="../Images/svg/facebook-app-logo.svg" alt="facebook"></a>
+                    <a href="https://twitter.com/"><img src="../Images/svg/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section-contact-right">
+            <div class="section-contact-form">
+                <h2>CONTACT US</h2>
+                <div class="section-contact-form-container">
+                    <form action="uwu">
+                        <div class="form-row">
+                            <label for="owo">Your name (optional)</label>
+                            <input type="text" id="owo" placeholder="John Anonymous">
+                        </div>
+                        <div class="form-row">
+                            <label for="hewwo">Your email (optional)</label>
+                            <input type="text" id="hewwo" placeholder="john.anonymous@example.com">
+                        </div>
+                        <div class="form-row">
+                            <label for="nuzzles">Subject</label>
+                            <input type="text" id="nuzzles" placeholder="Subject of message">
+                        </div>
+                        <div class="form-row">
+                            <label for="hehe">Your message</label>
+                            <textarea id="hehe" style="height: 200px;"
+                                placeholder="Your message goes here..."></textarea>
+                        </div>
+                        <div class="form-button-container">
+                            <input type="submit" class="default-button" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="section-contact-phonemail">
+                <div class="section-contact-phone-container">
+                    <h2>PHONE</h2>
+                    <p>(+420) 734 670 992</p>
+                </div>
+                <div class="section-contact-email-container">
+                    <h2>EMAIL</h2>
+                    <p>info@cafeteriacubana.cz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2019 Kryštof Záhumenský. All Rights Reserved.</p>
+    </footer>
+    <script src="../javascript/script_main.js" type="text/javascript"></script>
+</body>
+
+</html>

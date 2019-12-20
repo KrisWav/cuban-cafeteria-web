@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,AAAC,CAChB,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CAAG",
+    "sources": [
+        "../layout/products.sass"
+    ],
+    "names": [],
+    "file": "products.min.css"
+}

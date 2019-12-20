@@ -1,0 +1,74 @@
+@import abstracts/variables_main
+
+@import components/buttons
+@import components/bouncing_arrow
+@import components/hamburger
+
+@import layout/landing
+@import layout/navigation_desktop
+@import layout/navigation_mobile
+@import layout/about_us_section
+@import layout/article_photo
+@import layout/banner
+@import layout/contact_section
+@import layout/footer
+@import layout/contact_form
+@import layout/loading_screen
+
+html
+  scroll-behavior: smooth
+
+.black
+  color: $black
+
+.white
+  color: $white
+
+.black-background
+  background-color: $black
+
+.white-background
+  background-color: $white
+
+.black-svg
+  filter: invert(100%)
+
+.black-underscore
+  &:after
+    background: $black
+
+body
+  margin: 0
+
+@media screen and (max-width: 980px)
+  .navbar-item, .landing-title, .landing-text
+    display: none
+
+  .hamburger
+    display: block
+  
+  .hamburger-container
+    display: flex
+
+  .navbar-items
+    display: none
+  
+
+@media screen and (max-width: 460px)
+  .section-about-items
+    padding-left: 1rem
+    padding-right: 1rem
+
+  .navbar-logo
+    padding-left: 7vw
+    font-size: 7.6vw
+
+  .hamburger-container
+    padding-right: 7vw
+
+  .hamburger-container
+    right: 7vw
+
+@media screen and (max-height: 500px)
+  .mobile-menu-items-container
+    height: 85vh

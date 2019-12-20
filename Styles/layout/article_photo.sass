@@ -1,0 +1,56 @@
+.article-container
+    width: 100%
+    height: auto
+    display: flex
+
+.article-left
+    background-color: $background_white
+    display: flex
+    flex-flow: column
+    flex: 1
+    &-title-container
+        width: 100%
+        // padding: 2rem 0 2rem 0
+        height: auto
+        display: block
+        text-align: center
+        h2
+            display: block
+            font-family: $oswald
+            font-size: $title-text-size
+            color: $title_black
+            margin: 0
+            padding: $title-text-padding
+    
+    &-text-container
+        width: 100%
+        height: auto
+        display: block
+        text-align: center
+        p
+            display: block
+            font-family: $muli
+            font-size: $paragraph-text-size
+            padding: 3rem 5vw 3rem 5vw
+            margin: 0
+            color: $paragraph_black
+
+.article-right
+    display: flex   
+    flex: 1
+    flex-shrink: 1
+    background-image: url('../../Images/item_images/coffee_owo.jpg')
+    background-size: cover
+    background-position: center
+
+@media screen and (max-width: 980px)
+    .article-container
+        display: block
+
+    .article-right
+        height: 250px
+        flex: 0
+        display: block
+    
+    .article-left-text-container > p
+        padding: 3rem 7vw

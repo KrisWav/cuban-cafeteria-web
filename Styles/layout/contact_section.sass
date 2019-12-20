@@ -1,0 +1,134 @@
+#contact
+    height: auto
+    width: 100%
+    display: flex
+
+.section-contact
+
+    &-left
+        background-color: $background_white
+        display: flex
+        flex-flow: column
+        flex: 1
+        flex-shrink: 1
+        height: auto
+    
+    &-right
+        background-color: $background_black
+        display: flex
+        flex-flow: column
+        flex: 1
+        flex-shrink: 1
+        height: auto
+
+.section-contact
+    &-openhours
+        background-image: url('../../Images/item_images/tea_mug.jpg')
+        background-position: center
+        background-size: cover
+        background-repeat: norepeat
+        height: 600px
+        &-text-container
+            margin: 0 0 0 7vw
+            display: block
+
+            h2
+                font-size: $title-text-size
+                color: $white
+                font-family: $oswald
+                margin: 0 0 3rem 0
+                padding: 50px 0 0 0
+            h3
+                font-size: 24px
+                color: $orange
+                font-family: $oswald
+                margin: 2rem 0 1rem 0
+            p
+                font-size: $paragraph-text-size
+                color: $paragraph_white
+                font-family: $muli
+                margin: 0
+
+    &-socialmedia
+        background-color: $background_white
+        height: auto
+        text-align: center
+        display: flex
+        flex-flow: column
+        flex: 1
+        justify-content: center
+        h2
+            padding: $title-text-padding
+            font-size: 44px
+            margin: 0
+            font-family: $oswald
+
+        &-svg-container
+            width: 16rem
+            display: flex
+            justify-content: space-between
+            align-items: center
+            align-self: center
+            height: 3rem
+            padding: 4rem 0 55px 0
+            img
+                filter: invert(95%)
+                height: 55px
+                width: 55px
+
+    &-phonemail
+        background-color: $black
+        display: flex
+        justify-content: space-around
+        flex: 1
+
+    &-phone-container, &-email-container
+        display: block
+        align-self: center
+        h2
+            font-family: $oswald
+            font-weight: 24px
+            color: $orange
+            margin: 0
+        
+        p
+            font-family: $muli
+            font-size: $paragraph-text-size
+            color: $paragraph_white
+            margin: 10px 0 0 0
+
+@media screen and (max-width: 750px)
+    #contact
+        flex-flow: column
+
+    .section-contact-openhours
+        height: 450px
+        &-text-container
+            margin: 0 0 0 12vw
+    
+    .section-contact-phonemail
+        padding: 1rem 0 1rem 0
+
+@media screen and (max-width: 900px)
+    @media screen and ( min-width:  750px)
+        .section-contact-phonemail
+            flex-flow: column
+        .section-contact-phone-container, .section-contact-email-container
+            text-align: center
+            padding: 1rem 0 0 0
+        .section-contact-phonemail
+            padding: 0 0 1rem 0
+
+@media screen and (max-width: 460px)
+    .section-contact-phonemail
+        flex-flow: column
+    .section-contact-phone-container, .section-contact-email-container
+        text-align: center
+        padding: 1rem 0 0 0
+    .section-contact-phonemail
+        padding: 0 0 1rem 0
+
+@media screen and (max-width: 420px)
+    .section-contact-openhours-text-container
+        margin: 0
+        text-align: center

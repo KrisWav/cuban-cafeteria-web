@@ -1,0 +1,33 @@
+.hamburger
+  width: 35px
+  height: auto
+  align-self: center
+  display: none
+  cursor: pointer
+  padding-top: 6px
+  div
+    width: 35px
+    height: 5px
+    margin-bottom: 6px
+    display: block
+    transform-origin: 1.75px
+    transition-duration: 0.3s
+
+.hamburger-container
+  display: none
+  flex: 1
+  justify-content: flex-end
+  width: auto
+  height: inherit
+  padding-right: 3rem
+
+.navbar-hamburger-opened
+  .bar1
+    transform: rotateZ(45deg)
+
+  .bar3
+    transform: rotateZ(-45deg)
+
+  .bar2
+    transform: translate(-30px, 0)
+    opacity: 0

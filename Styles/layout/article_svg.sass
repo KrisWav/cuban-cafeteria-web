@@ -1,0 +1,59 @@
+.article-svg-container
+    width: 100%
+    height: auto
+    display: flex
+    background-color: $background_black
+    justify-content: center
+    flex-flow: column
+
+.article-svg-content-left
+    flex: 1
+    p
+        margin: 0
+        color: $paragraph_white
+        font-size: $paragraph-text-size
+        font-family: $muli
+        text-align: center
+        padding: 3rem 5vw
+
+.article-svg-content-right
+    flex: 1
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    &-img-wrapper
+        padding: 50px 5vw
+        display: flex
+        flex: 1
+        justify-content: center
+        align-items: center
+        img
+            max-width: 100%
+            max-height: 200px
+
+.article-svg-title-container
+    width: 100%
+    height: auto
+    display: block
+    text-align: center
+    h2
+        padding: $title-text-padding
+        display: block
+        margin: 0
+        font-family: $oswald
+        font-size: $title-text-size
+        color: $white
+
+.article-svg-content-container
+    display: flex
+    flex-flow: row
+    flex: 1
+
+@media screen and (max-width: 980px)
+    .article-svg-content-container
+        flex-flow: column
+    .article-svg-content-left
+        p
+            padding: 3rem 5vw 0
+        

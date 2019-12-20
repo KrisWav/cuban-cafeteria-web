@@ -1,0 +1,57 @@
+.mobile-menu
+  visibility: hidden
+  background-color: $white
+  height: 0px
+  width: 100%
+  transition-timing-function: ease-in-out
+  transition: 0.5s
+  z-index: 1
+  display: block
+  position: fixed
+  overflow: hidden
+  &-items-container
+    display: flex
+    margin: 17.5vh 0 17.5vh 0
+    position: absolute
+    width: 100vw
+    height: 65vh
+    transition-delay: 0.5s
+    transition: 0.2s
+    align-items: center
+    flex-flow: column
+    justify-content: space-evenly 
+
+  &-item
+    text-align: center
+    align-items: center
+    display: flex
+    a
+      text-decoration: none
+      font-size: 1.4rem
+      font-weight: bold
+      font-family: $muli
+      color: $black
+  
+  &-svgs
+    display: inline-flex
+    width: 11rem
+    justify-content: space-between
+    a > img
+      width: 2rem
+      height: 2rem
+      filter: invert(100%)
+
+  &-show
+    visibility: visible
+    height: 100%
+
+.navbar-white
+  .hamburger-container
+    .hamburger
+      div
+        background-color: $black
+
+
+
+
+  

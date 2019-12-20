@@ -1,0 +1,15 @@
+{
+    "liveSassCompile.settings.formats":[
+       {
+           "extensionName": ".min.css",
+           "format": "compressed",
+           "savePath": "/Styles/css"
+       }
+   ],
+   "liveSassCompile.settings.excludeList": [
+      "*/node_modules/*",
+      ".vscode/**"
+   ],
+"liveSassCompile.settings.generateMap": true,
+"liveServer.settings.port": 5501
+}

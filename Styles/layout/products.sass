@@ -1,0 +1,54 @@
+.products-container
+    height: auto
+    width: 100%
+
+.products-title-container
+    padding: $title-text-padding
+    text-align: center
+    h2
+        margin: 0
+        font-family: $oswald
+        font-size: $title-text-size
+
+.products
+    display: flex
+    justify-content: center
+    flex-flow: wrap
+    padding-bottom: 50px
+
+.products-light
+    background-color: $white
+    .products-title-container
+        h2
+            color: $paragraph_black
+    .products
+        .product-container
+            background-color: $background_white
+            .product-description
+                color: $paragraph_black
+            .product-price
+                color: $paragraph_black
+
+.products-dark
+    background-color: $black
+    .products-title-container
+        h2
+            color: $white
+    .products
+        .product-container
+            background-color: $background_black
+            .product-description
+                color: $paragraph_white
+            .product-price
+                color: $paragraph_white
+
+@media screen and (min-width: 1080px)
+    .products
+        width: 1080px
+        align-self: center
+
+    .products-container
+        display: flex
+        justify-content: center
+        flex-flow: column
+        text-align: center
