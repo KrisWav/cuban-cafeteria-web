@@ -72,3 +72,15 @@ body
 @media screen and (max-height: 500px)
   .mobile-menu-items-container
     height: 85vh
+
+@media print
+  .navbar
+    display: none
+  #contact
+    flex-flow: column
+  .section-contact-form
+    display: none
+  .section-contact-socialmedia
+    display: none
+  .default-button
+    display: none
